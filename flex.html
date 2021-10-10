@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flex</title>
+<style>
+  body{
+    background-color: antiquewhite;
+  }
+  .main{
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+  }
+.flex-container1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row;
+            align-items: center;
+      justify-Content:center;
+            background-color: DodgerBlue;
+             width: 100%; 
+             overflow:scroll;
+            
+        }
+.flex-container2 {
+   
+      border: 5px solid black;
+      height:200px;
+      width:100%;
+      display:flex;
+       align-items: center;
+      justify-Content:space-between;
+    }
+.img{
+padding:10px;
+}
+.box{
+background-color:#148335;
+border: 5px solid rgb(214, 47, 47);
+width: 200px;
+margin:10px;
+padding: 25px;
+}
+#box1{
+  flex:3 2;
+}
+#box4{
+  flex:1 3 200px;
+}
+#a{
+  background-color: rgb(86, 189, 248);
+   width: max-content;
+  margin: 2px;
+  padding: 5px;
+}
+#b{
+  background-color: rgb(86, 189, 248);
+   width: max-content;
+   text-align: center;
+  border:3px solid green;
+  margin: auto;
+  padding: 5px;
+  outline: 10px;
+}
+</style>
+ </head>
+  <body>
+    <h1 id="b">CSL3403 Assigiment</h1>
+  <h3 id="a">Aayush Kumar Sharma</h3>
+  <h3 id="a">2006159</h3>
+          <div class="main">
+            <h1>Flex Container with flex-wrap, flex-flow property</h1>
+          
+          <div class="flex-container1">
+            <div class="img"><img src="p1.jpg" ></div>
+            <div class="img"><img src="p2.jpg"></div>
+            <div class="img"><img src=" p3.jpg"></div>
+            <div class="img"><img src=" p4.jpg"></div>
+            <div class="img"><img src=" p5.jpg"></div>
+            <div class="img"><img src=" p6.jpg"></div>
+            <div class="img"><img src=" p7.jpg"></div>
+            <div class="img"><img src=" p8.jpg"></div>
+            <div class="img"><img src=" p9.jpg"></div>
+            <div class="img"><img src=" p10.jpg"></div>  
+          </div>
+    <h2 >2.Use of flex-grow,flex-shrink,flex-basic</h2>
+  <div class="flex-container2">
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div>
+    <div class="box" id="box4">Box 4</div>
+
+  </div>
+          </div>
+</body>
+</html>
